@@ -58,6 +58,12 @@
     <Compile Include="..\Stripe\Constants\StripeTransferFailureCodes.cs">
       <Link>Constants\StripeTransferFailureCodes.cs</Link>
     </Compile>
+    <Compile Include="..\Stripe\Entities\Base\StripeEntity.cs">
+      <Link>Entities\Base\StripeEntity.cs</Link>
+    </Compile>
+    <Compile Include="..\Stripe\Entities\Base\StripeEntityWithId.cs">
+      <Link>Entities\Base\StripeEntityWithId.cs</Link>
+    </Compile>
     <Compile Include="..\Stripe\Entities\CountrySpec.cs">
       <Link>Entities\CountrySpec.cs</Link>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="..\Stripe\Entities\Source.cs">
       <Link>Entities\Source.cs</Link>
+    </Compile>
+    <Compile Include="..\Stripe\Entities\Stripe3DSecure.cs">
+      <Link>Entities\Stripe3DSecure.cs</Link>
     </Compile>
     <Compile Include="..\Stripe\Entities\StripeAccount.cs">
       <Link>Entities\StripeAccount.cs</Link>
@@ -169,9 +178,6 @@
     <Compile Include="..\Stripe\Entities\StripeOAuthToken.cs">
       <Link>Entities\StripeOAuthToken.cs</Link>
     </Compile>
-    <Compile Include="..\Stripe\Entities\StripeObject.cs">
-      <Link>Entities\StripeObject.cs</Link>
-    </Compile>
     <Compile Include="..\Stripe\Entities\StripePeriod.cs">
       <Link>Entities\StripePeriod.cs</Link>
     </Compile>
@@ -186,6 +192,9 @@
     </Compile>
     <Compile Include="..\Stripe\Entities\StripeRefund.cs">
       <Link>Entities\StripeRefund.cs</Link>
+    </Compile>
+    <Compile Include="..\Stripe\Entities\StripeReview.cs">
+      <Link>Entities\StripeReview.cs</Link>
     </Compile>
     <Compile Include="..\Stripe\Entities\StripeSubscription.cs">
       <Link>Entities\StripeSubscription.cs</Link>
@@ -214,8 +223,14 @@
     <Compile Include="..\Stripe\Infrastructure\ExpandableProperty.cs">
       <Link>Infrastructure\ExpandableProperty.cs</Link>
     </Compile>
-    <Compile Include="..\Stripe\Infrastructure\Mapper.cs">
-      <Link>Infrastructure\Mapper.cs</Link>
+    <Compile Include="..\Stripe\Infrastructure\JsonConverters\SourceConverter.cs">
+      <Link>Infrastructure\JsonConverters\SourceConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Stripe\Infrastructure\JsonConverters\StripeDateTimeConverter.cs">
+      <Link>Infrastructure\JsonConverters\StripeDateTimeConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Stripe\Infrastructure\JsonConverters\StripeExternalAccountConverter.cs">
+      <Link>Infrastructure\JsonConverters\StripeExternalAccountConverter.cs</Link>
     </Compile>
     <Compile Include="..\Stripe\Infrastructure\MimeTypes.cs">
       <Link>Infrastructure\MimeTypes.cs</Link>
@@ -223,29 +238,32 @@
     <Compile Include="..\Stripe\Infrastructure\ParameterBuilder.cs">
       <Link>Infrastructure\ParameterBuilder.cs</Link>
     </Compile>
+    <Compile Include="..\Stripe\Infrastructure\Public\Mapper.cs">
+      <Link>Infrastructure\Public\Mapper.cs</Link>
+    </Compile>
+    <Compile Include="..\Stripe\Infrastructure\Public\StripeConfiguration.cs">
+      <Link>Infrastructure\Public\StripeConfiguration.cs</Link>
+    </Compile>
+    <Compile Include="..\Stripe\Infrastructure\Public\StripeException.cs">
+      <Link>Infrastructure\Public\StripeException.cs</Link>
+    </Compile>
+    <Compile Include="..\Stripe\Infrastructure\Public\StripeResponse.cs">
+      <Link>Infrastructure\Public\StripeResponse.cs</Link>
+    </Compile>
     <Compile Include="..\Stripe\Infrastructure\Requestor.cs">
       <Link>Infrastructure\Requestor.cs</Link>
-    </Compile>
-    <Compile Include="..\Stripe\Infrastructure\SourceConverter.cs">
-      <Link>Infrastructure\SourceConverter.cs</Link>
-    </Compile>
-    <Compile Include="..\Stripe\Infrastructure\StripeConfiguration.cs">
-      <Link>Infrastructure\StripeConfiguration.cs</Link>
-    </Compile>
-    <Compile Include="..\Stripe\Infrastructure\StripeDateTimeConverter.cs">
-      <Link>Infrastructure\StripeDateTimeConverter.cs</Link>
-    </Compile>
-    <Compile Include="..\Stripe\Infrastructure\StripeException.cs">
-      <Link>Infrastructure\StripeException.cs</Link>
-    </Compile>
-    <Compile Include="..\Stripe\Infrastructure\StripeExternalAccountConverter.cs">
-      <Link>Infrastructure\StripeExternalAccountConverter.cs</Link>
     </Compile>
     <Compile Include="..\Stripe\Infrastructure\Urls.cs">
       <Link>Infrastructure\Urls.cs</Link>
     </Compile>
     <Compile Include="..\Stripe\Properties\InternalsVisibleTo.cs">
       <Link>Properties\InternalsVisibleTo.cs</Link>
+    </Compile>
+    <Compile Include="..\Stripe\Services\3DSecure\Stripe3DSecureCreateOptions.cs">
+      <Link>Services\3DSecure\Stripe3DSecureCreateOptions.cs</Link>
+    </Compile>
+    <Compile Include="..\Stripe\Services\3DSecure\Stripe3DSecureService.cs">
+      <Link>Services\3DSecure\Stripe3DSecureService.cs</Link>
     </Compile>
     <Compile Include="..\Stripe\Services\Account\StripeAccountBankAccountOptions.cs">
       <Link>Services\Account\StripeAccountBankAccountOptions.cs</Link>

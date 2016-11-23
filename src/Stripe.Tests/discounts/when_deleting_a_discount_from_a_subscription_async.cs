@@ -1,5 +1,4 @@
-﻿using System;
-using Machine.Specifications;
+﻿using Machine.Specifications;
 
 namespace Stripe.Tests
 {
@@ -10,7 +9,7 @@ namespace Stripe.Tests
         private static StripeSubscription _subscription;
         private static StripeDeleted _deleted;
 
-        private Establish context = () =>
+        Establish context = () =>
         {
             _discountService = new StripeDiscountService();
 

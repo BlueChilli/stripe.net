@@ -1,7 +1,6 @@
 ﻿using System;
-using Machine.Specifications;
-using System.Linq;
 using System.Collections.Generic;
+using Machine.Specifications;
 
 namespace Stripe.Tests
 {
@@ -11,7 +10,7 @@ namespace Stripe.Tests
         private static StripeCustomer _createdCustomer;
         private static StripeCustomer _updatedCustomer;
 
-        private Establish context = () =>
+        Establish context = () =>
         {
             _customerService = new StripeCustomerService();
 
