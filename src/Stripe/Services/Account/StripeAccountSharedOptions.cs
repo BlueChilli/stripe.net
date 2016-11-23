@@ -34,6 +34,9 @@ namespace Stripe
         [JsonProperty("email")]
         public string Email { get; set; }
 
+        [JsonProperty("mcc")]
+        public string Mcc { get; set; } //Custom property not publicly available 
+
         [JsonProperty("external_account")]
         public StripeAccountCardOptions ExternalCardAccount { get; set; }
 

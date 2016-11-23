@@ -111,9 +111,6 @@ namespace Stripe
         }
         #endregion
 
-        [JsonProperty("destination")]
-        public string Destination { get; set; }
-
         [JsonProperty("statement_descriptor")]
         public string StatementDescriptor { get; set; }
 
